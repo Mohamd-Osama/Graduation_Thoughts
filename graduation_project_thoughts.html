@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خواطر عشوائية عن مشروع التخرج</title>
+    
+    <!-- تحميل خط Cairo من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- تحميل Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- إعدادات تخصيص Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                        english: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a', // blue-900
+                        secondary: '#3b82f6', // blue-500
+                        surface: '#f8fafc', // slate-50
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* إضافة حركة ظهور سلسة */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        /* تحسين قراءة النص العربي */
+        p {
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+<body class="bg-surface text-slate-800 font-sans antialiased selection:bg-secondary selection:text-white">
+
+    <!-- القسم العلوي (Hero Section) -->
+    <header class="bg-gradient-to-br from-slate-900 via-primary to-blue-800 text-white pt-16 pb-12 md:pt-20 md:pb-16 px-4 text-center rounded-b-[2rem] md:rounded-b-[2.5rem] shadow-xl relative overflow-hidden">
+        <!-- أشكال زخرفية في الخلفية -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-white opacity-5 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-400 opacity-10 blur-3xl"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto animate-fade-in">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 text-xs md:text-sm font-semibold mb-4 md:mb-6 backdrop-blur-sm shadow-sm">
+                نصائح تقنية ومهنية
+            </span>
+            <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">خواطر عشوائية عن مشروع التخرج</h1>
+            <p class="text-lg md:text-2xl opacity-90 font-semibold mb-6 md:mb-8">د. عبدالرحمن حسني</p>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="max-w-4xl mx-auto px-4 py-8 md:py-16">
+        
+        <!-- المقدمة -->
+        <section class="space-y-5 md:space-y-6 text-base md:text-lg lg:text-xl leading-loose md:leading-[2.2] text-slate-700 mb-10 md:mb-12 animate-fade-in" style="animation-delay: 0.2s;">
+            <p>
+                كذا حد سألني الفترة اللي فاتت عن مشروع التخرج ونشتغل علي ايه وايه الأفكار الحلوة .. ف حبيت اشارك بعض الخواطر ممكن تكون مفيدة
+            </p>
+            <p>
+                مشروع التخرج الهدف منه أنك تبين فيه المهارات اللي اكتسبتها في الكلية ومتمكن منها ومستعد تدخل بيها لسوق العمل. وبالتالي أول سؤال هتسأله لنفسك: <span class="font-bold text-primary">طيب هو سوق العمل دلوقت محتاج ايه؟</span>
+            </p>
+            <p>
+                اجابة السؤال دة السنة دي مختلفة عن اجابته السنة اللي فاتت وهتبقي مختلفة عن اجابته السن الجاية. مجالنا بيتغير بشكل سريع جداً، وسقف التوقعات من خريج تخصصات علوم الحاسب بقت عالية جداً.
+            </p>
+            <p>
+                من كام سنة كان اللي متخرج بيعرف يكتب كود بأي لغة برمجة معينة كان بيلاقي فرصة شغل كويسة. دلوقت كتابة الكود في حد ذاتها بقت مهارة الماركت شايفها ذات قيمة ضعيفة عشان ال AI بقي بيعرف يكتب كود أحسن مني ومنك (اتجادل معايا زي ما انت عايز في النقطة دي، ولكن دي الحقيقة). ف لو انت مشروع تخرجك هتكتبه في السي ڤي أنك عملت نظام كذا بلغة كذا، يؤسفني اقولك دي مش حاجة هتشد انتباه المدير اللي بيدور علي حد يعينه في التيم عنده. دة مش معناه أنك ماتتعلمش تكتب بلغة كذا، أو تبني سيستم كذا، دة معناه أن المتوقع منك أكتر شوية من دة، عشان مع وجود AI يساعدك تفهم حاجات أكبر وتكتب الكود، أنت المفروض تقدر تعمل حاجات اكتر في وقت أقل.
+            </p>
+            <p>
+                وبالتالي، فكرة المشروع اللي انت هتعمله مش مهمة أوي، بقدر ما مهم تبين مهارات معينة اكتسبتها في الكلية زيادة شوية عن كتابة الكود. لو معندكش فكرة مشروع تخرج دلوقت، ف دة عادي جداً. ولو عندك، خير وبركة. كل دة مش مهم. المهم انت في الآخر ايه المهارات اللي هتبينها لما تيجي تكتب المشروع علي ال سي ڤي بتاعك.
+            </p>
+            <div class="bg-blue-50 border-r-4 border-secondary p-4 md:p-6 rounded-l-xl my-6 md:my-8">
+                <p class="font-bold text-primary text-lg md:text-xl">دي المهارات اللي أنا شخصياً لو محتاج اعين حد هدور عليها:</p>
+            </div>
+        </section>
+
+        <!-- النقاط / المهارات -->
+        <section class="space-y-6 md:space-y-8">
+            
+            <!-- النقطة 1 -->
+            <div class="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+                    <span class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-bold shadow-inner">١</span>
+                    <div class="space-y-3 md:space-y-4 text-base md:text-lg leading-relaxed text-slate-700 mt-2 sm:mt-0">
+                        <p>
+                            انت فاهم البتاع دة شغال ازاي ولا لأ. "البتاع" دة كلمة تشير لأي حاجة. عارف الكود اللي كتبه ال AI شغال ازاي ولا لأ. عارف ال library اللي انت مستخدمها دي شغالة ازاي ولا لأ. عارف ال browser بيعمل ايه ولا لأ. فاهم الاندرويد وال iOS بيشغلوا ال lifecycle بتاعت الابلكيشن ازاي ولا لأ. فاهم الفرق بين ال components المختلفة ولا لأ. عارف الفرق بين ال sql وال nosql داتابيز ولا لأ. عارف شغالين ازاي ولا لأ. امتي اختار دي وامتي اختار دي.
+                        </p>
+                        <p class="text-slate-500 italic text-sm md:text-base">
+                            دي مش كل حاجة محتاج تعرفها. دي أمثلة علي انت لما تقول عملت كذا، انا محتاج اعرف انت فاهم اللي عملته دة شغال ازاي، ولا لزقت اكواد في بعض واهي شغالة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- النقطة 2 -->
+            <div class="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+                    <span class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-bold shadow-inner">٢</span>
+                    <div class="space-y-3 md:space-y-4 text-base md:text-lg leading-relaxed text-slate-700 mt-2 sm:mt-0">
+                        <p>
+                            محتاجك فاهم أساسيات system design. وعارف أن تصميم البرمجيات اختيارات، زي الحياة بالظبط ما هي اختيارات. مفيش حاجة هتديلك كل حاجة، بس لازم تبقي عارف ال pros وال cons بتاعت اختياراتك. لما تقول انا استخدمت Golang عشان اعمل كذا، هقولك ما استخدمتش ليه Python. لما تقولي بنيت مشروعي ب Postgres هقولك وليه مش Mongo. لما تقولي عملت ابلكيشن React Native هقولك ليه مش فلاتر. عملته فلاتر، هقولك ليه مش ريأكت. مفيش اجابة صح واجابة غلط. في اجابة هتبين انك فاهم اختياراتك، وفي اجابة هتبين أنك بتلوّش زي ما بتلوّش في حياتك بالظبط.
+                        </p>
+                        <p>
+                            من كام سنة ال system design كان حكر علي السنيورز والتيم ليدز. دلوقت عشان كتابة الكود مابقتش عائق، بقي مطلوب منك تعرف انت هتكتب كود بيعمل ايه وليه وازاي.
+                        </p>
+                        <div class="bg-slate-50 p-3 md:p-4 rounded-lg border border-slate-200 mt-4">
+                            <p class="mb-2 font-semibold">ودة مصدر ممكن تتعلم منه:</p>
+                            <a href="https://bytebytego.com/courses/system-design-interview" target="_blank" dir="ltr" class="text-secondary hover:text-primary transition-colors inline-block font-english break-all sm:break-normal text-sm md:text-base">
+                                https://bytebytego.com/courses/system-design-interview
+                            </a>
+                        </div>
+                        <p class="font-semibold text-primary mt-4">
+                            انت لو عملت اي مشروع منهم وطلعت بيه للنور للآخر، هتبقي حاجة قوية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- النقطة 3 -->
+            <div class="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+                    <span class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-bold shadow-inner">٣</span>
+                    <div class="space-y-3 md:space-y-4 text-base md:text-lg leading-relaxed text-slate-700 mt-2 sm:mt-0">
+                        <p>
+                            مشروع صغير شغال وطالع برودكشن واعرف اجربه لوحدي أبرك بكتير من مشروع كبير بس شغال علي اللابتوب بتاعك بس. سواء هدوس علي لينك في السي ڤي بتاعك، او هنزل موبايل ابلكيشن، او هتديني لينك github ويبقي مكتوب فيه ازاي اشغله، بس أنا عايز اشوف شغلك، مش بس وصف لشغل موجود علي اللابتوب بتاعك.
+                        </p>
+                        <p>
+                            ودي غلطة بيقع فيها ناس كتير. بتاخدنا الحماسة مع آخر سنة وعايزين نعمل مشروع نطلع بيه القمر، ومع ضيق وقت الدراسة، والجو الحر، ومواد آخر سنة، ودكاترة ومعيدين معندناش رحمة في التسليمات، تلاقي نفسك بتغزل أي حاجة بسرعة عشان تسلم المشروع.
+                        </p>
+                        <p class="font-semibold text-primary bg-blue-50 inline-block p-3 md:p-2 rounded text-sm md:text-base">
+                            خليك واقعي واختار مشروع حجمه مناسب لحجم فريقك، وركز ازاي تتعلم فيه مهارات وتبين أنك اتعلمتها.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- النقطة 4 -->
+            <div class="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+                    <span class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-bold shadow-inner">٤</span>
+                    <div class="space-y-3 md:space-y-4 text-base md:text-lg leading-relaxed text-slate-700 mt-2 sm:mt-0">
+                        <p>
+                            مشروع تخرجك مش شركة، ومش ستارتب هتطلع بيه شارك تانك بكرة. مشروع تخرجك مش لازم يحل مشاكل الكوكب، عشان غالباً مشاكل الكوكب مش هتتحل بسوفتوير بس. السوفت وير بيساعد في حل المشكلة، لكن ال business operations بتاخد وقت كبير جداً عشان الشركة تنجح.
+                        </p>
+                        <p>
+                            وبالتالي فكرتك انك تحل مشاكل المستشفيات في مصر، او التبرع بالدم في مصر، او الايجارات في مصر، او العيادات في مصر، او المواصلات في مصر، او تعمل marketplace يربط سعيد بسعيدة، أو أي حاجة هتلاقي نفسك مشروع تخرجك قلب انك بتعمل عمليات تشغيلية اكتر من صناعة السوفتوير اللي عايز تبين فيه مهارتك .. دي فكرة غير موفقة. وغالباً اتهرست في تلاتين فيلم اجنبي وعربي قبل كدة، وفشلت عشان التيم لا عرف يركز يبني سوفتوير كويس، ولا عرف يدير business ops كويس.
+                        </p>
+                        <p class="font-bold">
+                            اعمل مشروع تبين فيه مهاراتك في مجالك. ولما تتخرج ان شاء الله، اعمل الستارت اب اللي بتحلم بيها.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- النقطة 5 -->
+            <div class="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+                    <span class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-bold shadow-inner">٥</span>
+                    <div class="space-y-3 md:space-y-4 text-base md:text-lg leading-relaxed text-slate-700 mt-2 sm:mt-0">
+                        <p>
+                            مشروع تخرج من كلية حاسبات في ٢٠٢٧ مش بيستخدم AI في جانب من جوانبه هو مشروع غير ملفت. أضعف الايمان تكون استخدمت AI يساعدك تكتب الكود بتاعه. الأحلي أنه يكون هو ذات نفسه بيستخدم ال AI عشان يقدم قيمته. يعني في جزء computer vision او في جزء generative AI او جزء voice AI او جزء analytics. اجذب الانتباه لمشروعك أنك تبين أنك ماشتغلتش علي سيستم ادارة مخازن، او سيستم ترتيب المكتبات. ماتعملش حاجة عفا عليها الزمان ومفيش مهارات ذات قيمة تبينها في المشروع.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- النقطة 6 -->
+            <div class="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+                    <span class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-bold shadow-inner">٦</span>
+                    <div class="space-y-3 md:space-y-4 text-base md:text-lg leading-relaxed text-slate-700 w-full mt-2 sm:mt-0">
+                        <p class="font-bold">لو شايف انك عملت حاجة من الحاجات دي، هتلفت انتباهي:</p>
+                        
+                        <!-- قائمة باللغة الإنجليزية تم ضبط اتجاهها لليسار -->
+                        <div class="bg-slate-800 text-slate-100 p-4 md:p-6 rounded-xl shadow-inner mt-3 md:mt-4 overflow-x-auto">
+                            <ul dir="ltr" class="list-disc pl-4 md:pl-5 space-y-2 md:space-y-3 font-english text-sm sm:text-base text-left marker:text-blue-400">
+                                <li>A working system on production</li>
+                                <li>Integration with payment gateways (Paymob, PayTabs, Fawry)</li>
+                                <li>Integration with Maps services (Google Maps, HERE Maps)</li>
+                                <li>Integration with authentication systems (Okta, Auth0)</li>
+                                <li>Integration with monitoring services (Data dog, Sentry)</li>
+                                <li>Integration with AI models (OpenAI, Anthropic, Google)</li>
+                                <li>Integration with email, SMS and WhatsApp</li>
+                                <li>Distributed systems (Gateways, load balancing, cloud-native deployments, multi-tenancy)</li>
+                                <li>Low-level systems (Drivers, kernels, workload optimization, networking, memory management)</li>
+                                <li>Security engineering (offense, defense, monitoring)</li>
+                                <li>Connectivity (bluetooth, wifi, NFC)</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="mt-4 md:mt-6 font-semibold bg-yellow-50 p-3 md:p-4 rounded-lg border border-yellow-200 text-sm sm:text-base">
+                            لو ماتعرفش ولا حاجة من دول، ف دة عادي. خد وقتك واعرف عنهم قبل ما تفكر في فكرة مشروعك. الصيف طويل.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- فاصل -->
+        <div class="flex justify-center items-center my-10 md:my-16">
+            <div class="h-[1px] bg-slate-300 w-1/4"></div>
+            <div class="px-3 md:px-4 text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"></circle><circle cx="12" cy="5" r="2"></circle><circle cx="12" cy="19" r="2"></circle></svg></div>
+            <div class="h-[1px] bg-slate-300 w-1/4"></div>
+        </div>
+
+        <!-- الخاتمة -->
+        <section class="space-y-4 md:space-y-6 text-base md:text-lg lg:text-xl leading-loose md:leading-[2.2] text-slate-700 bg-white p-6 md:p-10 rounded-2xl md:rounded-3xl shadow-sm border border-slate-100">
+            <p>
+                أكيد في كتير هيختلف معايا ويقول لما دي المهارات المطلوبة من اللي لسة خريج، امال اللي شغال بقاله فترة مطلوب منه ايه. هقولك اللي شغال بقاله فترة مطلوب منه قصص وأمثلة عملية في مشاريع عملها، ومشاكل واجهته وحلها ازاي. مطلوب منه خبرته في تسليم المشاريع وتعاونه وسط فريق كبير.
+            </p>
+            <p>
+                وفي الآخر انت مش هتعرف تحصل كل المهارات دي في مشروع التخرج. انت بس مطلوب منك تبين انك اتقنت بعض منها، وعندك حاجة تقدر تقدمها للمكان اللي هتروح تشتغل فيه.
+            </p>
+            <p class="font-bold text-xl md:text-2xl text-primary text-center pt-2 md:pt-4">
+                موفقين باذن الله.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- الفوتر (معلومات الكاتب) -->
+    <footer class="bg-slate-900 text-slate-300 py-8 md:py-10 mt-8 md:mt-12 border-t-4 border-secondary">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-lg md:text-xl mb-4 font-bold text-white">by : Dr. Abdelrahman Hosny</p>
+            <a href="https://www.linkedin.com/in/abdelrahmanhosny/" target="_blank" dir="ltr" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 md:px-6 md:py-3 rounded-full transition-colors font-english shadow-lg text-sm md:text-base">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="md:w-5 md:h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                Linkedin Profile
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
